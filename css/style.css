@@ -154,7 +154,7 @@ body{
 
   justify-content:center;
 
-  gap:15px;
+  gap:25px;
 
   margin-top:25px;
 
@@ -965,10 +965,13 @@ button:active{
   }
 
   .info{
-    text-align:left;
+    display:flex;
+    flex-direction:column;
 
-    max-width:500px;
-  }
+    align-items:flex-start;
+
+    text-align:left;
+}
 
   .info h1{
     font-size:45px;
@@ -1177,4 +1180,34 @@ button:active{
     color:#d40000;
 
     font-size:18px;
+}
+
+
+.selo{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    margin:20px 0;
+
+    padding:12px 7px;
+
+    background:#fff5f5;
+
+    border:2px solid #e60000;
+
+    border-radius:50px;
+
+    color:#e60000;
+
+    font-weight:600;
+
+    font-size:13px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.selo i{
+    color:#e60000;
 }
