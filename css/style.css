@@ -1,0 +1,1180 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+  background:#f5f5f5;
+  color:#1d2b45;
+}
+
+/* =========================
+   CONTAINER GERAL
+========================= */
+
+.container{
+  max-width:1200px;
+
+  margin:0 auto;
+
+  padding:0 20px;
+}
+
+/* =========================
+   TOPO
+========================= */
+
+.topo,
+.motos{
+  width:100%;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.banner{
+  height:140px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #ff5a5a,
+    #d90000
+  );
+
+  border-radius:0 0 25px 25px;
+}
+
+/* =========================
+   PERFIL
+========================= */
+
+.perfil-area{
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  gap:80px;
+
+  padding:0 30px;
+
+  margin-top:-70px;
+
+  flex-wrap:wrap;
+}
+
+.perfil{
+  width:300px;
+  height: 300px;;
+
+  border-radius:50%;
+
+  object-fit:cover;
+
+  border:4px solid white;
+
+  background:white;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-loja{
+  width:300px;
+  height:80px;
+
+  background:white;
+
+  border-radius:20px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.logo-loja img{
+  width:70%;
+}
+
+/* =========================
+   INFO
+========================= */
+
+.info{
+  padding:30px 20px;
+
+  text-align:center;
+}
+
+.info h1{
+  font-size:2.5rem;
+
+  margin-bottom:10px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  gap:10px;
+}
+
+.info i{
+  color:#1d9bf0;
+}
+
+.info p{
+  color:#666;
+
+  line-height:1.5;
+
+  font-size:1rem;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botoes{
+  display:flex;
+
+  justify-content:center;
+
+  gap:15px;
+
+  margin-top:25px;
+
+  flex-wrap:wrap;
+}
+
+.btn{
+  background:#d90000;
+
+  color:white;
+
+  padding:15px 25px;
+
+  border-radius:50px;
+
+  text-decoration:none;
+
+  font-weight:bold;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+/* =========================
+   MOTOS
+========================= */
+
+.motos{
+  padding:20px 0 50px;
+}
+
+.motos h2{
+  text-align:center;
+
+  margin-bottom:30px;
+
+  font-size:2.2rem;
+}
+
+/* =========================
+   CARD MOTO
+========================= */
+
+.card-moto{
+  background:white;
+
+  max-width:500px;
+
+  margin:auto;
+
+  padding:25px;
+
+  border-radius:25px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.card-moto h3{
+  font-size:2rem;
+
+  margin-bottom:20px;
+
+  text-align:center;
+}
+
+.card-moto img{
+  width:100%;
+
+  height:220px;
+
+  object-fit:contain;
+
+  display:block;
+}
+
+/* =========================
+   BOTÕES CARD
+========================= */
+
+button{
+  width:100%;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:50px;
+
+  background:#d90000;
+
+  color:white;
+
+  font-size:1rem;
+
+  margin-top:15px;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+button:hover{
+  transform:scale(1.02);
+}
+
+.secundario{
+  background:#f1f1f1;
+
+  color:#1d2b45;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:768px){
+
+  .info h1{
+    font-size:2rem;
+  }
+
+  .perfil-area{
+    gap:20px;
+  }
+
+  .logo-loja{
+    width:70px;
+    height:70px;
+  }
+
+  .perfil{
+    width:100px;
+    height:100px;
+  }
+  
+
+  
+
+}
+
+.motos-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(320px,1fr));
+
+  gap:30px;
+
+  margin-top:30px;
+}
+
+
+
+/* =========================
+   PÁGINA DA MOTO
+========================= */
+
+.hero-moto{
+  text-align:center;
+
+  padding:40px 0;
+}
+
+.voltar{
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  text-decoration:none;
+
+  color:#1d2b45;
+
+  margin-bottom:30px;
+}
+
+.moto-detalhe-img{
+  width:100%;
+
+  max-width:500px;
+
+  margin:30px auto;
+
+  display:block;
+}
+
+.hero-moto h1{
+  font-size:2.5rem;
+
+  margin-bottom:10px;
+}
+
+.categoria{
+  color:#777;
+}
+
+/* =========================
+   DETALHES
+========================= */
+
+.detalhes,
+.consorcio,
+.financiamento{
+  margin-top:50px;
+}
+
+.detalhes h2,
+.consorcio h2,
+.financiamento h2{
+  margin-bottom:25px;
+
+  text-align:center;
+}
+
+.info-box{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(200px,1fr));
+
+  gap:20px;
+}
+
+.item{
+  background:white;
+
+  padding:25px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.item span{
+  display:block;
+
+  color:#777;
+
+  margin-bottom:10px;
+}
+
+.item strong{
+  font-size:1.2rem;
+}
+
+/* =========================
+   PLANOS
+========================= */
+
+.plano{
+  background:white;
+
+  padding:30px;
+
+  border-radius:25px;
+
+  text-align:center;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+  max-width:500px;
+
+  margin:auto;
+}
+
+.valor{
+  display:block;
+
+  font-size:2rem;
+
+  color:#d90000;
+
+  margin:20px 0;
+}
+
+/* =========================
+   TAG NOVA
+========================= */
+
+.tag-nova{
+  background:#d90000;
+
+  color:white;
+
+  padding:10px 20px;
+
+  border-radius:50px;
+
+  font-size:.9rem;
+
+  font-weight:bold;
+
+  display:inline-block;
+
+  margin-bottom:20px;
+}
+
+/* =========================
+   SOBRE MOTO
+========================= */
+
+.sobre-moto{
+  margin-top:50px;
+
+  text-align:center;
+}
+
+.sobre-moto h2{
+  margin-bottom:20px;
+
+  font-size:2rem;
+}
+
+.sobre-moto p{
+  max-width:800px;
+
+  margin:auto;
+
+  line-height:1.8;
+
+  color:#666;
+}
+
+/* =========================
+   BENEFÍCIOS
+========================= */
+
+.beneficios{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:25px;
+
+  margin-top:50px;
+}
+
+.beneficio{
+  background:white;
+
+  padding:30px;
+
+  border-radius:25px;
+
+  text-align:center;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.beneficio i{
+  font-size:2rem;
+
+  color:#d90000;
+
+  margin-bottom:20px;
+}
+
+.beneficio h3{
+  margin-bottom:15px;
+}
+
+.beneficio p{
+  color:#666;
+}
+
+
+/* =========================
+   CONSÓRCIO
+========================= */
+
+.consorcio-box{
+  background:white;
+
+  padding:30px;
+
+  border-radius:25px;
+
+  max-width:500px;
+
+  margin:40px auto;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+  text-align:center;
+}
+
+.moto-consorcio-img{
+  width:100%;
+
+  max-width:350px;
+
+  margin:20px auto;
+
+  display:block;
+}
+
+.consorcio-box h2{
+  margin:20px 0;
+
+  font-size:1.5rem;
+}
+
+/* =========================
+   PARCELAS
+========================= */
+
+.parcelas{
+  margin-top:25px;
+}
+
+.parcela{
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:10px;
+
+  padding:15px;
+
+  border-bottom:1px solid #eee;
+
+  font-size:1.1rem;
+}
+
+.parcela span{
+  color:#666;
+}
+
+.parcela strong{
+  color:#1d2b45;
+}
+
+.parcela.ativa strong{
+  color:#d90000;
+}
+
+/* =========================
+   OBSERVAÇÃO
+========================= */
+
+.observacao{
+  margin-top:25px;
+
+  color:#777;
+
+  font-size:.9rem;
+
+  line-height:1.5;
+}
+
+/* =========================
+   BOTÃO WHATSAPP
+========================= */
+
+.btn-whatsapp{
+  background:#25d366;
+
+  color:white;
+
+  width:100%;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:50px;
+
+  font-size:1rem;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  margin-top:30px;
+
+  transition:.3s;
+}
+
+.btn-whatsapp:hover{
+  transform:scale(1.02);
+}
+
+.btn-whatsapp i{
+  margin-right:10px;
+}
+
+.cta-final{
+  background:white;
+  margin-top:60px;
+  padding:50px 30px;
+  border-radius:30px;
+  text-align:center;
+}
+
+.cta-final h2{
+  font-size:32px;
+  margin-bottom:20px;
+  color:#1d2b45;
+}
+
+.cta-final p{
+  color:#666;
+  line-height:1.6;
+  max-width:600px;
+  margin:auto;
+}
+
+.cta-botoes{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.footer{
+  text-align:center;
+  padding:40px 20px;
+  color:#777;
+  font-size:14px;
+}
+
+.footer span{
+  display:block;
+  margin-top:10px;
+}
+
+#topoBtn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+
+  width:55px;
+  height:55px;
+
+  border:none;
+  border-radius:50%;
+
+  background:#d90000;
+  color:white;
+
+  font-size:20px;
+  cursor:pointer;
+
+  display:block;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+  z-index:999;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+.card-moto{
+  transition:0.3s;
+}
+
+.card-moto:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.whatsapp-float{
+  position:fixed;
+
+  width:60px;
+  height:60px;
+
+  bottom:20px;
+  left:20px;
+
+  background:#25d366;
+  color:white;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:32px;
+
+  text-decoration:none;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+  z-index:999;
+}
+
+.card-moto{
+  opacity:0;
+  transform:translateY(40px);
+
+  transition:0.6s;
+}
+
+.card-moto.mostrar{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.btn:active,
+button:active{
+  transform:scale(0.96);
+}
+
+
+
+.card-moto{
+  opacity:0;
+
+  transform:translateY(40px);
+
+  transition:0.6s;
+}
+
+.card-moto.mostrar{
+  opacity:1;
+
+  transform:translateY(0);
+}
+
+/* LOADING */
+
+#loading{
+  position:fixed;
+
+  width:100%;
+  height:100vh;
+
+  background:white;
+
+  top:0;
+  left:0;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+  justify-content:center;
+
+  z-index:99999;
+
+  transition:0.6s;
+}
+
+.loading-logo{
+  width:180px;
+
+  animation:pulsar 1.5s infinite;
+}
+
+#loading h2{
+  margin-top:20px;
+
+  color:#d90000;
+
+  font-size:28px;
+
+  letter-spacing:2px;
+}
+
+@keyframes pulsar{
+
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.08);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+
+}
+
+/* BUSCA */
+
+.busca{
+  background:white;
+
+  margin:30px;
+
+  padding:18px 22px;
+
+  border-radius:50px;
+
+  display:flex;
+  align-items:center;
+  gap:15px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.busca i{
+  color:#999;
+
+  font-size:18px;
+}
+
+.busca input{
+  border:none;
+
+  outline:none;
+
+  width:100%;
+
+  font-size:17px;
+
+  color:#1d2b45;
+
+  background:none;
+}
+
+
+/* DESKTOP */
+@media (min-width: 900px){
+
+  .perfil{
+
+    width:260px;
+    height:320px;
+
+    border-radius:30px;
+
+    object-fit:cover;
+
+    border:6px solid white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  }
+
+}
+
+/* FOTO PADRÃO */
+
+.perfil{
+  object-fit:cover;
+
+  border:6px solid white;
+}
+
+
+/* MOBILE */
+
+.perfil-mobile{
+  width:180px;
+  height:180px;
+
+  border-radius:50%;
+}
+
+.perfil-desktop{
+  display:none;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 900px){
+
+  .perfil-mobile{
+    display:none;
+  }
+
+  .perfil-desktop{
+    display:block;
+
+    width:500px;
+    height:420px;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  }
+
+}
+
+@media (min-width: 900px){
+
+  .hero{
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:80px;
+
+    padding:40px 60px;
+  }
+
+  .info{
+    text-align:left;
+
+    max-width:500px;
+  }
+
+  .info h1{
+    font-size:45px;
+  }
+
+  .info p{
+    font-size:22px;
+
+    margin-top:15px;
+  }
+
+  .botoes{
+    justify-content:flex-start;
+  }
+
+}
+
+.card-moto{
+  background:white;
+
+  border-radius:30px;
+
+  padding:25px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:space-between;
+}
+
+
+.formulario-consorcio{
+  background:white;
+
+  margin-top:40px;
+
+  padding:30px;
+
+  border-radius:30px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.formulario-consorcio h1{
+  text-align:center;
+
+  margin-bottom:30px;
+
+  color:#1d2b45;
+
+  font-size:38px;
+}
+
+#formConsorcio{
+  display:flex;
+
+  flex-direction:column;
+
+  gap:18px;
+}
+
+#formConsorcio input{
+  width:100%;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:15px;
+
+  background:#f5f5f5;
+
+  font-size:16px;
+
+  outline:none;
+}
+
+#enviarWhatsapp{
+  background:#25d366;
+
+  color:white;
+
+  border:none;
+
+  padding:20px;
+
+  border-radius:50px;
+
+  font-size:18px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+#enviarWhatsapp:hover{
+  transform:scale(1.02);
+}
+
+
+#formConsorcio select{
+  width:100%;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:15px;
+
+  background:#f5f5f5;
+
+  font-size:16px;
+
+  outline:none;
+
+  color:#1d2b45;
+}
+
+
+
+/* ===========================
+        LOADING SCREEN
+=========================== */
+
+#loading{
+    position:fixed;
+    inset:0;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+
+    transition:opacity .6s ease;
+}
+
+.loading-content{
+
+    width:90%;
+    max-width:420px;
+
+    text-align:center;
+}
+
+.loading-logo{
+
+    width:180px;
+
+    margin-bottom:20px;
+}
+
+.loading-content h1{
+
+    color:#1f1f1f;
+
+    margin-bottom:10px;
+
+    font-size:36px;
+}
+
+#loading-text{
+
+    color:#666;
+
+    margin-bottom:30px;
+}
+
+.loading-bar{
+
+    width:100%;
+
+    height:10px;
+
+    background:#ececec;
+
+    border-radius:30px;
+
+    overflow:hidden;
+}
+
+#loading-progress{
+
+    width:0%;
+
+    height:100%;
+
+    background:#d40000;
+
+    transition:width .2s linear;
+}
+
+#loading-percent{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+    color:#d40000;
+
+    font-size:18px;
+}
