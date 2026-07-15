@@ -1334,3 +1334,49 @@ FINANCIAMENTO
     color:#333;
 
 }
+
+
+/* logo tropical */
+
+.logo-concessionaria{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-top:35px;
+    margin-bottom:25px;
+
+}
+
+.logo-concessionaria img{
+
+    width:240px;
+    height:auto;
+
+    transition:.3s;
+
+}
+
+.logo-concessionaria img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.logo-concessionaria img{
+
+    filter:drop-shadow(0 8px 18px rgba(0,0,0,.12));
+
+}
+/* logo tropical mobile*/
+
+@media(max-width:768px){
+
+.logo-concessionaria img{
+
+    width:180px;
+
+}
+
+}
