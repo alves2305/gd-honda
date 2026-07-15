@@ -1211,3 +1211,126 @@ button:active{
 .selo i{
     color:#e60000;
 }
+
+.moto-consorcio-img{
+    position: relative;
+    z-index: 2;
+}
+
+.consorcio-box{
+    position: relative;
+    overflow: hidden;
+}
+
+.consorcio-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("../img/logo-gd.svg");
+
+    background-repeat:repeat;
+
+    background-size:130px;
+
+    opacity:.15;
+
+    pointer-events:none;
+
+    z-index:0;
+
+    background-position:center;
+}
+
+.consorcio-box > *{
+    position:relative;
+    z-index:1;
+}
+
+
+/*financiamento/*
+
+/* ==========================
+FINANCIAMENTO
+========================== */
+
+.descricao-financiamento{
+
+    text-align:center;
+
+    color:#555;
+
+    line-height:1.6;
+
+    margin:15px 0 30px;
+
+    font-size:15px;
+
+}
+
+
+
+.etapas-financiamento{
+
+    margin-top:35px;
+
+}
+
+
+
+.etapas-financiamento h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.etapa{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:#fff;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+.etapa i{
+
+    color:#e60000;
+
+    font-size:24px;
+
+    min-width:30px;
+
+}
+
+
+
+.etapa p{
+
+    margin:0;
+
+    font-size:15px;
+
+    color:#333;
+
+}

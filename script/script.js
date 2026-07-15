@@ -185,113 +185,133 @@ if(pesquisa){
 const enviarWhatsapp =
 document.getElementById('enviarWhatsapp');
 
-if(enviarWhatsapp){
+if (enviarWhatsapp) {
 
   enviarWhatsapp.addEventListener('click', () => {
 
-    const cpf =
-    document.getElementById('cpf');
+    // ==========================
+    // CAMPOS
+    // ==========================
 
-    const nomeCompleto =
-    document.getElementById('nomeCompleto');
+    const nomeCompleto = document.getElementById('nomeCompleto');
+    const cidade = document.getElementById('cidade');
+    const primeiraParcela = document.getElementById('primeiraParcela');
 
-    const endereco =
-    document.getElementById('endereco');
+    const valorEntrada = document.getElementById('valorEntrada');
+    const cpf = document.getElementById('cpf');
+    const telefone = document.getElementById('telefone');
+    const dataNascimento = document.getElementById('dataNascimento');
+    const endereco = document.getElementById('endereco');
+    const email = document.getElementById('email');
+    const profissao = document.getElementById('profissao');
+    const renda = document.getElementById('renda');
 
-    const email =
-    document.getElementById('email');
-
-    const profissao =
-    document.getElementById('profissao');
-
-    const renda =
-    document.getElementById('renda');
-
-    const primeiraParcela =
-    document.getElementById('primeiraParcela');
-
-    const formaPagamento =
-    document.getElementById('formaPagamento');
+    const numero = '5574999153482';
 
 
-    // VALIDAÇÃO
-    if(cpf.value === ''){
-      alert('Por favor, preencha o CPF.');
-      cpf.focus();
-      return;
-    }
 
-    if(nomeCompleto.value === ''){
-      alert('Por favor, preencha o nome completo.');
-      nomeCompleto.focus();
-      return;
-    }
+    // ==========================
+    // CONSÓRCIO
+    // ==========================
 
-    if(endereco.value === ''){
-      alert('Por favor, preencha o endereço.');
-      endereco.focus();
-      return;
-    }
+    if (primeiraParcela) {
 
-    if(email.value === ''){
-      alert('Por favor, preencha o e-mail.');
-      email.focus();
-      return;
-    }
+      if (!nomeCompleto.value.trim()) {
+        alert('Por favor, informe o nome completo.');
+        nomeCompleto.focus();
+        return;
+      }
 
-    if(profissao.value === ''){
-      alert('Por favor, preencha a profissão.');
-      profissao.focus();
-      return;
-    }
+      if (!cidade.value.trim()) {
+        alert('Por favor, informe a cidade.');
+        cidade.focus();
+        return;
+      }
 
-    if(renda.value === ''){
-      alert('Por favor, preencha a renda mensal.');
-      renda.focus();
-      return;
-    }
+      if (!primeiraParcela.value.trim()) {
+        alert('Por favor, escolha um plano.');
+        primeiraParcela.focus();
+        return;
+      }
 
-    if(primeiraParcela.value === ''){
-      alert('Por favor, escolha um plano.');
-      primeiraParcela.focus();
-      return;
-    }
+      const mensagem =
+`Olá GD, gostaria de fazer agora meu consórcio da ${nomeMoto}.
 
-    if(formaPagamento.value === ''){
-      alert('Por favor, escolha a forma de pagamento.');
-      formaPagamento.focus();
+Nome completo: ${nomeCompleto.value}
+
+Cidade: ${cidade.value}
+
+Plano escolhido: ${primeiraParcela.value}`;
+
+      window.open(
+        `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`,
+        '_blank'
+      );
+
       return;
     }
 
 
-    // MENSAGEM
-    const mensagem =
-`Olá Rafael, gostaria de fazer agora meu consórcio da ${nomeMoto}.
+
+    // ==========================
+    // FINANCIAMENTO
+    // ==========================
+
+    if (valorEntrada) {
+
+      if (!valorEntrada.value.trim()) {
+        alert('Por favor, informe o valor da entrada.');
+        valorEntrada.focus();
+        return;
+      }
+
+      if (!cpf.value.trim()) {
+        alert('Por favor, informe o CPF.');
+        cpf.focus();
+        return;
+      }
+
+      if (!nomeCompleto.value.trim()) {
+        alert('Por favor, informe o nome completo.');
+        nomeCompleto.focus();
+        return;
+      }
+
+      if (!telefone.value.trim()) {
+        alert('Por favor, informe o telefone.');
+        telefone.focus();
+        return;
+      }
+
+      if (!dataNascimento.value.trim()) {
+        alert('Por favor, informe a data de nascimento.');
+        dataNascimento.focus();
+        return;
+      }
+
+      const mensagem =
+`Olá GD, gostaria de fazer uma simulação de financiamento da ${nomeMoto}.
+
+Valor da entrada: ${valorEntrada.value}
 
 CPF: ${cpf.value}
 
 Nome completo: ${nomeCompleto.value}
 
-Endereço: ${endereco.value}
+Telefone: ${telefone.value}
 
-E-mail: ${email.value}
+Data de nascimento: ${dataNascimento.value}`;
 
-Profissão: ${profissao.value}
+      window.open(
+        `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`,
+        '_blank'
+      );
 
-Renda mensal: ${renda.value}
-
-Plano escolhido: ${primeiraParcela.value}
-
-Forma de pagamento: ${formaPagamento.value}`;
+      return;
+    }
 
 
-    const numero =
-    '5574999679596';
-
-    const url =
-`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-
-    window.open(url, '_blank');
+    alert('Formulário não reconhecido.');
 
   });
 
