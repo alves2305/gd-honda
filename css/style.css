@@ -1380,3 +1380,86 @@ FINANCIAMENTO
 }
 
 }
+
+
+/*navegacao entre motos*/
+
+.navegacao-motos{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin:40px 0;
+
+    gap:20px;
+
+}
+
+.navegacao-motos a{
+
+    flex:1;
+
+    background:#fff;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    text-decoration:none;
+
+    color:#16325C;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.navegacao-motos a:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.navegacao-motos strong{
+
+    display:block;
+
+    margin-top:6px;
+
+    font-size:20px;
+
+}
+
+.proxima{
+
+    text-align:right;
+
+}
+
+.anterior{
+
+    text-align:left;
+
+}
+
+
+
+@media(max-width:768px){
+
+.navegacao-motos{
+
+    flex-direction:column;
+
+}
+
+.navegacao-motos a{
+
+    width:100%;
+
+}
+
+}
